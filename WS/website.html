@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TinDog</title>
+  <style>
+    :root { 
+      --pink: rgb(238, 116, 116);
+       --ink:#222; }
+    *{
+      box-sizing:border-box}
+     body{
+      margin:0;
+      font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);}
+    a{
+      color:inherit}
+    header{
+      position:sticky;
+      top:0;
+      background:#fff;
+      border-bottom:1px solid #eee}
+    .wrap{
+      max-width:980px;
+      margin:auto;
+      padding:16px;}
+    .row{
+      display:flex;
+      gap:24px;
+      flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      background:var(--pink);
+      color:#fff;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none}
+    .btn.outline{
+      background:#fff;
+      color:var(--pink);
+      border:2px solid var(--pink)}
+    .hero{
+      background:linear-gradient(180deg,#fff,#fff0);
+      padding:48px 0;
+      background: #ff4c68;}
+    .hero h1{
+      font-size:40px;
+      line-height:1.1;
+      margin:0 0 12px}
+    .phone{
+      width:260px;
+      height:520px;
+      border:10px solid #111;
+      border-radius:28px;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(0,0,0,.12)}
+    .screen{
+      position:absolute;
+      inset:14px;
+      border-radius:14px;
+      background:url('https://wallpaper.dog/large/5439024.jpg')}
+    .features{
+      padding:36px 0}
+    .feat{
+      flex:1 1 240px;
+      border:1px solid #eee;
+      border-radius:16px;
+      padding:16px}
+    .cta{
+      padding: 40px;
+      background: #eee;
+      text-align: center;}
+    .quote{
+      padding:40px 0;
+      background:#ffe3e8;
+      text-align:center}
+    .pricing{
+      padding:36px 0}
+    .card{
+      flex:1 1 260px;
+      border:1px solid #eee;
+      border-radius:16px;
+      padding:16px}
+    footer{
+      border-top:1px solid #eee}
+    small{
+      color:#666}
+    img{
+      border-radius: 100px;
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap row" style="justify-content:space-between;align-items:center">
+      <strong>🐶 TinDog</strong>
+      <nav style="display:flex;gap:16px">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta">Get App</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap row" style="align-items:center">
+      <div style="flex:1 1 360px;min-width:280px">
+        <h1><bold>Meet new ang interesting dogs nearby</bold></h1>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#">Download</a>
+          <a class="btn outline" href="#features">Download</a>
+        </div>
+      </div>
+      <div style="flex:1 1 260px;display:flex;justify-content:center">
+        <div class="phone" aria-hidden="true"><div class="screen"></div></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="cta">
+      <h1>A Plan for Every Dog's Needs</h1>
+      <p>Simple and affordable price plans for you and your dog.</p>
+    </div>
+  </section>
+  <section id="features" class="features">
+    <div class="wrap row">
+      <div class="feat"><h3> Easy to use.</h3><p>So easy to use, even your dog could do it.</p></div>
+      <div class="feat"><h3> Elite Clientele.</h3><p>We have all the dogs, the greatest dogs.</p></div>
+      <div class="feat"><h3> Guaranteed to work.</h3><p>Find the love of ypur dog's life or your money back.</p></div>
+    </div>
+  </section>
+  <section class="quote">
+    <div class="wrap">
+      <h2>“I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.”</h2>
+      <img src='https://wallpaper.dog/large/5439024.jpg' alt="logo" width="100">
+      <p>Pebbles, New York</p>
+    </div>
+    </section>
+  <section id="pricing" class="pricing">
+    <div class="wrap row">
+      <div class="card"><h3>Chihuahua</h3><p><strong>$0</strong>/mo</p><ul><li>5 Matches Per Day</li><li>10 Messages Per Day</li><li>Unlimited App Usage</li></ul><a class="btn outline" href="#">Sign up for free</a></div>
+      <div class="card"><h3>Labrador</h3><p><strong>$15</strong> / mo</p><ul><li>Unlimited Matches</li><li>Unlimited Messages</li><li>Unlimited App Usage</li></ul><a class="btn" href="#">Get started</a></div>
+      <div class="card"><h3>Mastiff</h3><p><strong>$29</strong> / mo</p><ul><li>Pirority Listing</li><li>Unlimited Matches & Messages</li><li>Unlimited App Usage</li></ul><a class="btn outline" href="#">Contact</a></div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+      <small>© <span id="year"></span> TinDog</small>
+    </div>
+  </footer>
+
+</body>
+</html>
